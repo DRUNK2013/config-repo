@@ -40,6 +40,7 @@
 #  security:
 #    enabled: false
 #https://github.com/spring-cloud/spring-cloud-netflix/issues/622
+
 security:
   basic:
     enabled: false
