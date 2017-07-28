@@ -40,7 +40,6 @@
 #  security:
 #    enabled: false
 #https://github.com/spring-cloud/spring-cloud-netflix/issues/622
-
 security:
   basic:
     enabled: false
@@ -48,13 +47,21 @@ security:
       name: user
       password: password
   enable-csrf: false
+spring:
+  application:
+    name: eureka-server
 server:
   port: 16801
 
 eureka:
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defult-zone: http://localhost:18802/eureka/
+  instance:
+    hostname: localhost
+info: eureka-server-v1.0
 #    serviceUrl:
 #      defaultZone: http://localhost:18802/eureka/
 #      defaultZone: http://user:password@localhost:${server.port}/eureka/
