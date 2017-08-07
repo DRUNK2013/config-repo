@@ -14,4 +14,4 @@ server:
 eureka:
   client:
     service-url:
-      defult-zone:http://172.16.8.36:16801/eureka/
+      defaultZone: http://172.16.8.36:16801/eureka/
