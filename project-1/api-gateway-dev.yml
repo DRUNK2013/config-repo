@@ -1,0 +1,21 @@
+security:
+  basic:
+    enabled: false
+  user:
+      name: user
+      password: password
+  enable-csrf: false
+spring:
+  application:
+    name: api-gateway
+server:
+  port: ${SERVER_PORT:0}
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defult-zone: http://server:18802/eureka/
+  instance:
+    hostname: server
