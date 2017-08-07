@@ -16,6 +16,6 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defult-zone: http://server:18802/eureka/
+      defult-zone: http://server:18801/eureka/
   instance:
     hostname: server
