@@ -14,6 +14,4 @@ server:
 eureka:
   client:
     service-url:
-      defult-zone: http://server:16801/eureka/
-  instance:
-    hostname: server
+      defult-zone:http://172.16.8.36:16801/eureka/
